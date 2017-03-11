@@ -23,8 +23,9 @@
 <div class="container">
   <!-- new row(empty) -->
   <div class="row">
-    <br></br>
-    <br></br>
+    <form action="pullFromIndex.php" method="post">
+      <input type="text" name="search" value="">
+      <input type="submit" value="Search">
   <!--end empty row -->
   </div>
   <!-- new row -->
@@ -34,7 +35,7 @@
     </div>
     <!-- place for document upload -->
     <div class="col-sm-4">
-      <form action="/action_page.php" method="post">
+      <form action="action_page.php" method="post">
         <input type="file" name="Doc" accept="file_extension">
         <br></br>
         <input type="submit">
