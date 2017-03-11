@@ -17,7 +17,6 @@ $myfile = fopen( $fileName, "r") or die("Unable to open file!" . "\n");
 $contents =  fread($myfile,filesize($fileName));
 fclose($myfile);
 
-// breaks up contents
-echo ($contents . "/n");
-print_r (explode(">",$contents));
+preg_match_all('/<w:t>[^<>]+<\/w:t>/', $contents, $wordXML);
+print_r ($wordXML);
  ?>
