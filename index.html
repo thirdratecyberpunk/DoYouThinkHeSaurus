@@ -21,11 +21,27 @@
 </div>
 <!-- new container -->
 <div class="container">
-  <!--empty column for white space -->
-  <div class="col-sm-4">
+  <!-- new row(empty) -->
+  <div class="row">
+    <br></br>
+    <br></br>
+  <!--end empty row -->
   </div>
-  <!-- place for document upload -->
-  <div class="col-sm-4">
+  <!-- new row -->
+  <div class="row">
+    <!--empty column for white space -->
+    <div class="col-sm-4">
+    </div>
+    <!-- place for document upload -->
+    <div class="col-sm-4">
+      <form action="/action_page.php" method="post">
+        <input type="file" name="Doc" accept="file_extension">
+        <br></br>
+        <input type="submit">
+      </form>
+    </div>
+  <!-- end row -->
   </div>
+<!-- end container -->
 </div>
 </body>
