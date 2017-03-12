@@ -32,7 +32,7 @@
     </div>
     <!--column for document -->
     <div class="col-sm-4">
-      <?php include_once /** this is where lewis needs to method **/
+      <?php echo getTextLines($_POST); /** this is where lewis needs to method **/
        ?>
     <!-- end document column -->
     </div>
