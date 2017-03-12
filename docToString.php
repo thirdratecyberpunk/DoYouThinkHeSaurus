@@ -1,6 +1,5 @@
 <?php
 // turns a .docx file passed by the user into an array of strings
-// for some reason passes an array of arrays?
 function getTextLines($filename){
   $zip = new ZipArchive;
   $res = $zip->open($filename);
@@ -19,6 +18,15 @@ function getTextLines($filename){
   fclose($myfile);
 
   preg_match_all('/<w:t>[^<>]+<\/w:t>/', $contents, $wordXML);
-  return $wordXML;
+  $stringLines = '';
+  foreach($wordXML as $containerArray){
+    foreach($containerArray as $word){
+        $word = str_replace('<w:t>', ' ', $word);
+        $word = str_replace('</w:t>', '', $word);
+        $stringLines = $stringLines . $word;
+    }
   }
+  return $stringLines;
+}
+  echo (getTextLines('test.docx'));
  ?>
