@@ -32,7 +32,7 @@
     </div>
     <!--column for document -->
     <div class="col-sm-4">
-      <?php /** this is where lewis needs to method **/
+      <?php /** needs to pull from index here **/
        ?>
     <!-- end document column -->
     </div>
