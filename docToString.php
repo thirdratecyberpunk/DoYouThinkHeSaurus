@@ -28,5 +28,4 @@ function getTextLines($filename){
   }
   return $stringLines;
 }
-  echo (getTextLines('test.docx'));
  ?>
