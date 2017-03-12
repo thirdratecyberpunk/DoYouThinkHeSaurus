@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- naming the site -->
@@ -33,7 +32,7 @@
     </div>
     <!--column for document -->
     <div class="col-sm-4">
-      <?php include_once /** this is where lewis needs to method **/ 
+      <?php include_once /** this is where lewis needs to method **/
        ?>
     <!-- end document column -->
     </div>
