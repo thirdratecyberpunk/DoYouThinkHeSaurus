@@ -45,7 +45,7 @@
     </div>
     <!-- place for document upload -->
     <div class="col-sm-4">
-      <form action="action_page.php" method="post">
+      <form action="pushToIndex.php" method="post">
         <input type="file" name="Doc" accept="file_extension">
         <br></br>
         <input type="submit">
